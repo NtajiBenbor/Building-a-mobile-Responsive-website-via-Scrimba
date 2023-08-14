@@ -1,0 +1,318 @@
+/* ===========colors */
+
+/* #f8f8f8 =====white  nav-bg
+#707070 =====grey    Navigation links
+#1792d2 =====Light-blue.   subtitle
+#143774 =====DarkBlue   title*/
+
+/* fonts============= */
+
+/* title======== Lora - 3.375rem
+subtitle ===== ubuntu bold - 1 rem
+Navigation === ubuntu bold 1 rem */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* .image-full {
+    max-width: 300px;
+    height: 100%;
+} */
+
+/* =======Typography===== */
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* logo subtitle */
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.read-more:hover,
+.read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.article-info {
+  margin: 2em 0;
+  color: #707070;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+/* =======layout===== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 2em 0;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+footer{
+    background: #143774;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 3em 0;
+}
+
+/* navigation */
+.nav-li-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list-items {
+  margin: 1em 0;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 2px solid maroon;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+/* article */
+
+.article-feature {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
+}
+
+
+.article-feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
+  }
+
+  .article-info {
+    order: -1;
+  }
+
+
+ /* Widgets======= */
+ .sidebar-widget {
+    border: 20px solid #ececec ;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    
+  }
+
+  .widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #707070;
+    
+  }
+
+  .widget-recent-post:last-child {
+    border: none;
+    margin: 0;
+  }
+
+  .widget-image {
+    order: -1;
+  
+  }
+
+  /* .widget-recent-post-title{
+    padding: 0.5em 0;
+    margin-bottom: 0;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries========= */
+
+@media (min-width: 675px) {
+  header {
+    text-align: center;
+  }
+  .container-flex {
+    flex-direction: row;
+  }
+
+  .nav-li-container {
+    flex-direction: row;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+    min-width: 250px;
+    margin-left: 1em;
+  }
+
+  .nav-list-items {
+    margin-left: 2em;
+  }
+
+  .article-recent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-image {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+  }
+
+  .article-recent-main {
+    width: 65%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  
+
+ 
+
+}
+
+/* used this to create a fake two column layout so my date and article title can fit together
+with out overlapping  try to avoid using nagetive values in your margin as much as possible*/
+
+/* @media (max-width: 550px) {
+    .article-recent-main {
+        margin-top: -1.5em;
+    
+    }
+
+
+    .article-info {
+        text-align: right;
+    }
+} */
