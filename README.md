@@ -81,7 +81,7 @@ The following tools and resources where utilized in building this project.
 
 ## Author :pen:
 Hi I'm Benedict, I'm learning to become a frontend developer. check out my blog where I'll be sharing my learning experiences, projects, and tips. 
-- Checkout it [here](https://www.benneythedev.hashnode.dev/) :link: 
+- Checkout it [here](https://benneythedev.hashnode.dev/) :link: 
 
 You can also connect with me on twitter
 - [Follow me](https://www.twitter.com/CodewithNtaji) :link: 
